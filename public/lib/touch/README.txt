@@ -1,0 +1,1 @@
+Put Sencha touch 2.0 SDK in this directory

@@ -1,0 +1,28 @@
+Ext.define('XPhoto.view.tablet.AlbumList',{
+    extend:'Ext.Container',
+    requires:[
+        'Ext.dataview.List',
+        'Ext.field.Search'
+    ],
+    alias:'widget.xphotoalbumlist',
+    config:{
+        layout:'fit',
+        collapsible:true,
+        items:[{
+            xtype:'toolbar',
+            docked:'top',
+            items:[{
+                xtype:'searchfield',
+                placeHolder:'Search',
+                name:'album_searchfield',
+                width:230
+            }]
+        },{
+            xtype:'list',
+            store:'albumListStore',
+            grouped:true,
+            indexBar:true,
+            itemTpl:'<div>{name}</div>'
+        }]
+    }
+})
