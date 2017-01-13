@@ -1,4 +1,4 @@
-codeX-PHP-framework
+[ DEPRECATED ] codeX-PHP-framework 
 ===================
 
 An ultra-light weight PHP framework. 
